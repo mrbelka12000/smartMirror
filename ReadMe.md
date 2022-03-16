@@ -1,0 +1,1 @@
+#Smart Mirror an application written in Go used to create notes, reminders
