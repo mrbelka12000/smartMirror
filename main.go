@@ -34,7 +34,7 @@ func main() {
 			dialog.ShowCustom("About", "Close", container.NewVBox(
 				widget.NewLabel("Welcome to Gopher, a simple Desktop app created in Go with Fyne."),
 				widget.NewLabel("Version: v0.1"),
-				widget.NewLabel("Author: Aurélie Vache"),
+				widget.NewLabel("Author: mrbelka12000"),
 			), window)
 		}))
 	mainMenu := fyne.NewMainMenu(
@@ -68,6 +68,8 @@ func main() {
 		log.Println("server started")
 		log.Fatalln(http.ListenAndServe(":8080", r))
 	}()
+
+	//window.SetFullScreen(true)
 	window.ShowAndRun()
 }
 
